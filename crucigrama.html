@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>CRUCIGRAMA</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:100,300,300i,400,500,600,700,900%7CRaleway:500">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicoon.ico" type="image/x-icon">
+    
+    <style>
+      body {
+        background: url("img/fondo.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+      #mensaje {
+        width: 300px;
+      }
+      .col-md-12 {
+        padding: 0 0 0 38%;
+      }
+      .casilla {
+        width: 50px;
+        height: 50px;
+        text-align: center;
+      }
+      .table {
+        width: 300px;
+      }
+      .table td,
+      th {
+        padding: 0;
+      }
+
+      @media (max-width: 600px) {
+        .col-md-12 {
+          padding: 0 0 0 18%;
+        }
+      }
+    </style>
+  </head>
+
+            
+  <body>
+      <!-- Navbar -->
+      <header class="section page-header">
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar rd-navbar-modern" data-layout="rd-navbar-fixed" data-lg-stick-up="true">
+            <div class="rd-navbar-inner-outer">
+              <div class="rd-navbar-inner">
+                <div class="rd-navbar-panel">
+                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                  <div class="rd-navbar-brand">
+                    <a class="brand" href="index.html">
+                      <img class="brand-logo-dark" src="images/Logo.png" alt="" width="198" height="66"/>
+                    </a>
+                  </div>
+                </div>
+                <div class="rd-navbar-main">
+                  <ul class="rd-navbar-nav">
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Inicio</a></li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="about-us.html">Crucigrama</a></li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="sopaLetras.html">Sopa de Letras</a></li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="typography.html">Rompecabezas</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+    
+      <!-- Contenido del crucigrama -->
+    
+    
+    <br><br><br><br>
+    <div class="col-md-12">
+  
+
+      <div id="mensaje"></div>
+
+      <b>Busca la palabra que describe la imagen</b><br />
+      <!-- <table class="table">
+        <tr>
+          <td>
+            Horizontales<br />
+            - <img src="img/palabra1.png" width="50" /><br />
+            - <img src="img/palabra2.png" width="50" /><br />
+          </td>
+          <td>
+            Verticales<br />
+            - <img src="img/palabra3.png" width="50" /><br />
+            - <img src="img/palabra4.png" width="50" /><br />
+          </td>
+        </tr>
+      </table> -->
+
+      <table class="table">
+        <tr>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila1C1" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila1C2" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila1C3" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila1C4" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila1C5" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila1C6" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila2C1" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila2C2" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila2C3" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila2C4" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila2C5" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila2C6" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila3C1" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila3C2" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila3C3" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila3C4" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila3C5" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila3C6" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila4C1" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila4C2" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila4C3" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila4C4" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila4C5" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila4C6" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila5C1" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila5C2" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila5C3" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila5C4" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila5C5" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila5C6" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila6C1" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila6C2" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila6C3" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila6C4" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila6C5" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila6C6" />
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila7C1" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila7C2" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila7C3" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila7C4" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila7C5" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila7C6" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila8C1" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila8C2" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila8C3" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila8C4" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila8C5" />
+          </td>
+          <td>
+            <input class="casilla" type="text" maxlength="1" id="fila8C6" />
+          </td>
+        </tr>
+        
+      </table>
+
+      <script>
+        // Deshabilitar todos los campos
+        for(fila=1; fila<=6; fila++){
+          for(columna=1;columna<=6;columna++){
+            document.getElementById("fila"+fila+"C"+columna).readOnly=true;
+          }
+        }
+
+
+        var palabra1_letra1 = document.getElementById("fila1C1");
+        var palabra1_letra2 = document.getElementById("fila1C2");
+        var palabra1_letra3 = document.getElementById("fila1C3");
+        var palabra1_letra4 = document.getElementById("fila1C4");
+        var palabra1_letra5 = document.getElementById("fila1C5");
+
+        var palabra2_letra1 = document.getElementById("fila4C2");
+        var palabra2_letra2 = document.getElementById("fila4C3");
+        var palabra2_letra3 = document.getElementById("fila4C4");
+
+        var palabra3_letra1 = document.getElementById("fila1C4");
+        var palabra3_letra2 = document.getElementById("fila2C4");
+        var palabra3_letra3 = document.getElementById("fila3C4");
+        var palabra3_letra4 = document.getElementById("fila4C4");
+
+        var palabra4_letra1 = document.getElementById("fila3C2");
+        var palabra4_letra2 = document.getElementById("fila4C2");
+        var palabra4_letra3 = document.getElementById("fila5C2");
+        var palabra4_letra4 = document.getElementById("fila6C2");
+
+        
+
+        //Habilitar las casillas necesarias (horizontales)
+        palabra1_letra1.readOnly =false;
+        palabra1_letra2.readOnly =false;
+        palabra1_letra3.readOnly =false;
+        palabra1_letra4.readOnly =false;
+        palabra1_letra5.readOnly =false;
+
+        palabra2_letra1.readOnly =false;
+        palabra2_letra2.readOnly =false;
+        palabra2_letra3.readOnly =false;
+
+        //Habilitar las casillas necesarias (verticales)
+        palabra3_letra1.readOnly =false;
+        palabra3_letra2.readOnly =false;
+        palabra3_letra3.readOnly =false;
+        palabra3_letra4.readOnly =false;
+
+        palabra4_letra1.readOnly =false;
+        palabra4_letra2.readOnly =false;
+        palabra4_letra3.readOnly =false;
+        palabra4_letra4.readOnly =false;
+
+        for(fila=1; fila<=6; fila++){
+          for(columna=1;columna<=6;columna++){
+            if(document.getElementById("fila"+ fila +"C" + columna).readOnly==false){
+               document.getElementById("fila"+ fila +"C" + columna).style.backgroundColor="#07c7e6";
+            }
+          }
+        }
+
+        var errorActivo=0;
+        function error(){
+          document.getElementById("mensaje").innerHTML="Existen palabras malas";
+          document.getElementById("mensaje").className="alert alert-danger";
+          errorActivo=1;
+        }
+
+        //esta funcion es para ejecutarse cada 5 segundos
+        setInterval('ocultarError()',5000);
+
+        function ocultarError(){
+          if(errorActivo==1){
+            document.getElementById("mensaje").innerHTML="";
+            document.getElementById("mensaje").className="";
+            errorActivo=0;
+          }
+        }
+
+        function verificar(){
+          document.getElementById("mensaje").innerHTML="";
+          palabra1 = palabra1_letra1.value + palabra1_letra2.value + palabra1_letra3.value + palabra1_letra4.value + palabra1_letra5.value; 
+          palabra2 = palabra2_letra1.value + palabra2_letra2.value + palabra2_letra3.value; 
+          palabra3 = palabra3_letra1.value + palabra3_letra2.value + palabra3_letra3.value + palabra3_letra4.value; 
+          palabra4 = palabra4_letra1.value + palabra4_letra2.value + palabra4_letra3.value + palabra4_letra4.value;
+
+          if(palabra1.toLowerCase()=="fuego" && palabra2.toLowerCase()=="oso" && palabra3.toLowerCase()=="gato" && palabra4.toLowerCase()=="loro"){
+            document.getElementById("mensaje").innerHTML="Ganaste";
+            document.getElementById("mensaje").style.fontSize="24px";
+            document.getElementById("mensaje").className="alert alert-success";
+          }else{
+            if(palabra1.toLowerCase()!="fuego"){
+               palabra1_letra1.value="";
+               palabra1_letra2.value="";
+               palabra1_letra3.value="";
+               palabra1_letra4.value="";
+               palabra1_letra5.value="";
+               error();
+            }
+
+            if(palabra2.toLowerCase()!="oso"){
+               palabra2_letra1.value="";
+               palabra2_letra2.value="";
+               palabra2_letra3.value="";
+               error();
+            }
+
+            if(palabra3.toLowerCase()!="gato"){
+               palabra3_letra1.value="";
+               palabra3_letra2.value="";
+               palabra3_letra3.value="";
+               error();
+            }
+
+            if(palabra4.toLowerCase()!="loro"){
+               palabra4_letra1.value="";
+               palabra4_letra2.value="";
+               palabra4_letra3.value="";
+               palabra4_letra4.value="";
+               error();
+            }
+
+            //corrector de palabras
+            if(palabra1.toLowerCase()=="fuego"){
+               palabra1_letra4.value="g";
+            }
+
+            if(palabra2.toLowerCase()=="oso"){
+               palabra2_letra1.value="o";
+            }
+
+            if(palabra3.toLowerCase()=="gato"){
+               palabra3_letra1.value="g";
+               palabra3_letra4.value="o";
+            }
+
+            if(palabra2.toLowerCase()=="loro"){
+               palabra4_letra2.value="o";
+            }
+
+          }
+        }
+
+
+
+
+
+      </script>
+
+      <img src="img/boton.png" onClick="verificar()" style="margin: 0 0 0 13%;"/>
+    </div>
+
+  </body>
+</html>
