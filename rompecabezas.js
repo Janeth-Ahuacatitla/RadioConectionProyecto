@@ -56,6 +56,7 @@ function chequearSiGano() {
 function mostrarCartelGanador() {
     detenerTemporizador(); // Detiene el cronómetro
     alert(`¡GANASTE! Tiempo total: ${document.getElementById("tiempo").textContent}`);
+    location.reload(); // Recarga la página para reiniciar el juego
 }
 
 /* Función que intercambia dos posiciones en la grilla.
