@@ -60,7 +60,7 @@
             <div class="texto-centrado">
               
             </div>
-            <img class="imagen-objetivo" src="https://i.ibb.co/Kps9FbzR/Dia-Naranja.jpg" alt="Dia-Naranja">
+            <img class="imagen-objetivo" src="https://i.ibb.co/mVwhggJy/Dia-Integridad.jpg" alt="Dia-Integridad">
           </div>
           <div id="ultimo-mov">
             <h2>Último movimiento</h2>
@@ -70,48 +70,40 @@
           </div>
           
         </div>
-        
         <div class="col-60">
-                        <div id="juego">
-                <div id="pieza1" class="piezas-rompecabezas"><img class="imagen-rompecabeza" 
-                  src="https://i.ibb.co/jk62rLc8/fila-1-columna-1.jpg" alt="fila-1-columna-1"></div>
-                <div id="pieza2" class="piezas-rompecabezas"><img class="imagen-rompecabeza"
-                   src="https://i.ibb.co/bM0zfQ2B/fila-1-columna-2.jpg" alt="fila-1-columna-2"></div>
-                <div id="pieza3" class="piezas-rompecabezas"><img class="imagen-rompecabeza" 
-                  src="https://i.ibb.co/wZvVK9Vg/fila-1-columna-3.jpg" alt="fila-1-columna-3"></div>
-                <div id="pieza4" class="piezas-rompecabezas"><img class="imagen-rompecabeza" 
-                  src="https://i.ibb.co/5xg7jz4w/fila-2-columna-1.jpg" alt="fila-2-columna-1"></div>
-                <div id="pieza5" class="piezas-rompecabezas"><img class="imagen-rompecabeza" 
-                  src="https://i.ibb.co/cSWYx0bP/fila-2-columna-2.jpg" alt="fila-2-columna-2"></div>
-                <div id="pieza6" class="piezas-rompecabezas"><img class="imagen-rompecabeza" 
-                  src="https://i.ibb.co/5fbKJw2/fila-2-columna-3.jpg" alt="fila-2-columna-3"></div>
-                <div id="pieza7" class="piezas-rompecabezas"><img class="imagen-rompecabeza" 
-                  src="https://i.ibb.co/jvVgmjGm/fila-3-columna-1.jpg" alt="fila-3-columna-1"></div>
-                <div id="pieza8" class="piezas-rompecabezas"><img class="imagen-rompecabeza" 
-                  src="https://i.ibb.co/ccBbKjrR/fila-3-columna-2.jpg" alt="fila-3-columna-2"></div>
-                <div id="pieza9" class="piezas-rompecabezas"><img class="imagen-rompecabeza" 
-                  src="" alt=""></div>
+            <!-- Cronómetro -->
+            <div id="cronometro" style="text-align: center; margin-bottom: 10px;">
+                <h2 style="text-align: left;">Tiempo transcurrido</h2>
+                <h3><span id="tiempo">0:00</span></h3>
             </div>
-            <div class="texto-centrado" style="margin-top: 20px;">
-                <button onclick="siguienteNivel()" class="btn btn-primary">Siguiente Nivel</button>
-            </div>
+
+          <div id="juego">
+            <div id="pieza1" class="piezas-rompecabezas"><img class="imagen-rompecabeza" src="https://i.ibb.co/KxzNXJR4/fila-1-columna-1.jpg" alt="fila-1-columna-1"></div>
+            <div id="pieza2" class="piezas-rompecabezas"><img class="imagen-rompecabeza" src="https://i.ibb.co/tp7p0CR1/fila-1-columna-2.jpg" alt="fila-1-columna-2"></div>
+            <div id="pieza3" class="piezas-rompecabezas"><img class="imagen-rompecabeza" src="https://i.ibb.co/tpVJvf4Q/fila-1-columna-3.jpg" alt="fila-1-columna-3"></div>
+            <div id="pieza4" class="piezas-rompecabezas"><img class="imagen-rompecabeza" src="https://i.ibb.co/N26sXmsf/fila-2-columna-1.jpg" alt="fila-1-columna-4"></div>
+            <div id="pieza5" class="piezas-rompecabezas"><img class="imagen-rompecabeza" src="https://i.ibb.co/8LHSHY6j/fila-2-columna-2.jpg" alt="fila-2-columna-1"></div>
+            <div id="pieza6" class="piezas-rompecabezas"><img class="imagen-rompecabeza" src="https://i.ibb.co/NnHYnsjX/fila-2-columna-3.jpg" alt="fila-2-columna-2"></div>
+            <div id="pieza7" class="piezas-rompecabezas"><img class="imagen-rompecabeza" src="https://i.ibb.co/BVph8mZ5/fila-3-columna-1.jpg" alt="fila-2-columna-3"></div>
+            <div id="pieza8" class="piezas-rompecabezas"><img class="imagen-rompecabeza" src="https://i.ibb.co/1Gx80cxP/fila-3-columna-2.jpg" alt="fila-2-columna-4"></div>
+            <div id="pieza9" class="piezas-rompecabezas"><img class="imagen-rompecabeza" src="" alt=""></div> 
+          </div>
+          <div class="texto-centrado" style="margin-top: 20px;">
+            <button onclick="siguienteNivel()" class="btn btn-primary">Siguiente Nivel</button>
+          </div>
         </div>
-        <section id="mensajeVictoria" style="display: none; text-align: center; margin-top: 20px;">
-            <h2>¡Felicidades! Has completado todo.</h2>
-            <button onclick="location.reload()" class="btn btn-success">Jugar otra vez</button>
-        </section>
         <div id="footer">
-          <script>
-            function siguienteNivel() {
-                window.location.href = "nivel2.html"; 
-            }
-        </script>
+            <script>
+                function siguienteNivel() {
+                    window.location.href = "nivel2.html"; 
+                }
+            </script>
 
         </div>
     <div class="snackbars" id="form-output-global"></div>
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
     <script src="rompecabezas.js"></script>
-
+    
 </body>
 </html>
