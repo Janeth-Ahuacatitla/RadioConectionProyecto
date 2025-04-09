@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="es">
+<head>
+    <title>adivinapalabra</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="images/favicoon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:100,300,300i,400,500,600,700,900%7CRaleway:500">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+<body>
+    <center>
+    <div class="preloader">
+      <div class="wrapper-triangle">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRUBLqCZhQnzsdpNscOGhP_HVBe1juz8vMVu1M2JXvfbQNjEHiwQyKBV5KwVwbXxR3NhU&usqp=CAU" alt="Loading" width="100" height="100">
+      </center>
+      </div>
+    </div>
+    <div class="page">
+        <header class="section page-header">
+            <div class="rd-navbar-wrap">
+                <nav class="rd-navbar rd-navbar-modern" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="56px" data-xl-stick-up-offset="56px" data-xxl-stick-up-offset="56px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+                    <div class="rd-navbar-inner-outer">
+                        <div class="rd-navbar-inner">
+                            <div class="rd-navbar-panel">
+                                <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                                <div class="rd-navbar-brand"><a class="brand" href="index.html"><img class="brand-logo-dark" src="images/Logo.png" alt="" width="198" height="66"/></a></div>
+                            </div>
+                            <div class="rd-navbar-main">
+                                <ul class="rd-navbar-nav">
+                                    <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Inicio</a></li>
+                                    <li class="rd-nav-item"><a class="rd-nav-link" href="about-us.html">Crucigrama</a></li>
+                                    <li class="rd-nav-item active"><a class="rd-nav-link" href="adivinalapalabra.html">Adivina la Palabra</a></li>
+                                    <li class="rd-nav-item"><a class="rd-nav-link" href="typography.html">Rompecabezas</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section>
+          <h2>Adivina la Palabra</h2>
+          <div id="palabra">
+              <div class="letra honestidad">H</div>
+              <div class="letra">O</div>
+              <div class="letra">N</div>
+              <div class="letra">E</div>
+              <div class="letra">S</div>
+              <div class="letra">T</div>
+              <div class="letra">I</div>
+              <div class="letra">D</div>
+              <div class="letra">A</div>
+              <div class="letra">D</div>
+          </div>
+          <h3>Ayuda: <span id="ayuda"> Valor fundamental de la verda</span> </h3>
+          <h3>Intentos restantes: <span id="intentos">5</span></h3>
+          <h3>Letras ingresadas: <span id="letrasIngresadas"></span></h3>
+  
+          <button onclick="cargarNuevaPalabra()">Nueva Palabra</button>
+      </section>
+      <section id="mensajeVictoria" style="display: none; text-align: center; margin-top: 20px;">
+          <h2>¡Felicidades! Has completado todas las palabras.</h2>
+          <button onclick="location.reload()" class="btn btn-success">Jugar otra vez</button>
+      </section>
+        </div>
+
+
+    <div class="snackbars" id="form-output-global"></div>
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

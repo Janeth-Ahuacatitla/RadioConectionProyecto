@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="es">
+<head>
+    <title>Crucigrama</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" 
+    content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="images/favicoon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" 
+    href="//fonts.googleapis.com/css?family=Roboto:100,300,300i,400,500,600,700,900%7CRaleway:500">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+  body {
+    background: url("img/fondo.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  #mensaje {
+    width: 65%;
+    text-align: center;
+    font-weight: bold;
+    
+    text-align: center;
+  }
+  .col-md-12 {
+    padding: 0 0 0 35%;
+  }
+  .casilla {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+  }
+  .table {
+    width: 700px;
+  }
+  .table td,
+  th {
+    padding: 0;
+  }
+
+  /* .texto-rojo-centrado {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+} */
+
+  @media (max-width: 600px) {
+    .col-md-12 {
+      padding: 0 0 0 18%;
+    }
+  }
+</style>
+<body>
+  <center>
+  <div class="preloader">
+    <div class="wrapper-triangle">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRUBLqCZhQnzsdpNscOGhP_HVBe1juz8vMVu1M2JXvfbQNjEHiwQyKBV5KwVwbXxR3NhU&usqp=CAU" alt="Loading" width="100" height="100">
+    </center>
+    </div>
+  </div>
+    <div class="page">
+        <header class="section page-header">
+            <div class="rd-navbar-wrap">
+                <nav class="rd-navbar rd-navbar-modern" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="56px" data-xl-stick-up-offset="56px" data-xxl-stick-up-offset="56px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+                    <div class="rd-navbar-inner-outer">
+                        <div class="rd-navbar-inner">
+                            <div class="rd-navbar-panel">
+                                <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                                <div class="rd-navbar-brand"><a class="brand" href="index.html"><img class="brand-logo-dark" src="images/Logo.png" alt="" width="198" height="66"/></a></div>
+                            </div>
+                            <div class="rd-navbar-main">
+                                <ul class="rd-navbar-nav">
+                                    <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Inicio</a></li>
+                                    <li class="rd-nav-item active"><a class="rd-nav-link" href="about-us.html">Crucigrama</a></li>
+                                    <li class="rd-nav-item"><a class="rd-nav-link" href="adivinalapalabra.html">Adivina la Palabra</a></li>
+                                    <li class="rd-nav-item"><a class="rd-nav-link" href="typography.html">Rompecabezas</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        
+        <div class="col-md-12">      
+    
+          <div id="mensaje" class="text-center text-danger fw-bold mb-3">Busca la palabra que describe la imagen</div>
+          
+          <table class="table">
+            <tr>
+              <td>
+                HORIZONTALES <br>
+                <b>Conjunto de normas morales que guían las acciones.</b> <br><br>
+                <b> Fidelidad a principios y valores.</b> <br><br>
+                <b>Derecho a ser tratado con equidad.</b> <br><br>
+                <b>Derecho a vivir sin miedo ni violencia.</b> <br>
+              </td>
+              <td>
+                VERTICALES<br />
+                <b>Seguridad en la honestidad de las personas.</b><br><br>
+                <b>Justicia en el trato para todas las personas</b>
+              </td>
+            </tr>
+          </table>
+    
+          <table class="table">
+            <tr>
+              <td><input class="casilla" type="text" maxlength="1" id="fila1C1" /></td>
+              <td><input class="casilla" type="text" maxlength="1" id="fila1C2" /></td>
+              <td><input class="casilla" type="text" maxlength="1" id="fila1C3" /></td>
+              <td><input class="casilla" type="text" maxlength="1" id="fila1C4" /></td>
+              <td><input class="casilla" type="text" maxlength="1" id="fila1C5" /></td>
+              <td><input class="casilla" type="text" maxlength="1" id="fila1C6" /></td>
+              <td> <input class="casilla" type="text" maxlength="1" id="fila1C7" /></td>
+              <td><input class="casilla" type="text" maxlength="1" id="fila1C8" /></td>
+              <td><input class="casilla" type="text" maxlength="1" id="fila1C9" /></td>
+              <td><input class="casilla" type="text" maxlength="1" id="fila1C10" /></td>
+              <td><input class="casilla" type="text" maxlength="1" id="fila1C11" /></td>
+              <td><input class="casilla" type="text" maxlength="1" id="fila1C12" /></td>
+              <td><input class="casilla" type="text" maxlength="1" id="fila1C13" /></td>
+            </tr>
+            <tr>
+              <td><input class="casilla" type="text" maxlength="1" id="fila2C1" /></td>
+              <td><input class="casilla" type="text" maxlength="1" id="fila2C2" /></td>
+              <td><input class="casilla" type="text" maxlength="1" id="fila2C3" /></td>
+              <td><input class="casilla" type="text" maxlength="1" id="fila2C4" /></td>
+              <td><input class="casilla" type="text" maxlength="1" id="fila2C5" /></td>
+              <td><input class="casilla" type="text" maxlength="1" id="fila2C6" /></td>
+              <td><input class="casilla" type="text" maxlength="1" id="fila2C7" /></td>
+              <td><input class="casilla" type="text" maxlength="1" id="fila2C8" /></td>
+              <td><input class="casilla" type="text" maxlength="1" id="fila2C9" /></td>
+              <td><input class="casilla" type="text" maxlength="1" id="fila2C10" /></td>
+              <td><input class="casilla" type="text" maxlength="1" id="fila2C11" /></td>
+              <td><input class="casilla" type="text" maxlength="1" id="fila2C12" /></td>
+              <td><input class="casilla" type="text" maxlength="1" id="fila2C13" /></td>
+            </tr>
+
+            <tr>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila3C1" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila3C2" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila3C3" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila3C4" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila3C5" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila3C6" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila3C7" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila3C8" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila3C9" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila3C10" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila3C11" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila3C12" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila3C13" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila4C1" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila4C2" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila4C3" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila4C4" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila4C5" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila4C6" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila4C7" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila4C8" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila4C9" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila4C10" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila4C11" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila4C12" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila4C13" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila5C1" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila5C2" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila5C3" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila5C4" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila5C5" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila5C6" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila5C7" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila5C8" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila5C9" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila5C10" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila5C11" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila5C12" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila5C13" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila6C1" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila6C2" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila6C3" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila6C4" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila6C5" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila6C6" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila6C7" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila6C8" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila6C9" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila6C10" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila6C11" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila6C12" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila6C13" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila7C1" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila7C2" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila7C3" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila7C4" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila7C5" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila7C6" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila7C7" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila7C8" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila7C9" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila7C10" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila7C11" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila7C12" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila7C13" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila8C1" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila8C2" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila8C3" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila8C4" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila8C5" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila8C6" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila8C7" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila8C8" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila8C9" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila8C10" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila8C11" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila8C12" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila8C13" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila9C1" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila9C2" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila9C3" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila9C4" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila9C5" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila9C6" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila9C7" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila9C8" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila9C9" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila9C10" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila9C11" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila9C12" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila9C13" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila10C1" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila10C2" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila10C3" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila10C4" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila10C5" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila10C6" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila10C7" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila10C8" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila10C9" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila10C10" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila10C11" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila10C12" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila10C13" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila11C1" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila11C2" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila11C3" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila11C4" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila11C5" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila11C6" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila11C7" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila11C8" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila11C9" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila11C10" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila11C11" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila11C12" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila11C13" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila12C1" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila12C2" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila12C3" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila12C4" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila12C5" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila12C6" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila12C7" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila12C8" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila12C9" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila12C10" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila12C11" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila12C12" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila12C13" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila13C1" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila13C2" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila13C3" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila13C4" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila13C5" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila13C6" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila13C7" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila13C8" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila13C9" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila13C10" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila13C11" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila13C12" />
+              </td>
+              <td>
+                <input class="casilla" type="text" maxlength="1" id="fila13C13" />
+              </td>
+            </tr>
+          </table>
+    
+          <script>
+            // Deshabilitar todos los campos
+            for(fila=1; fila<=13; fila++){
+              for(columna=1;columna<=13;columna++){
+                document.getElementById("fila"+fila+"C"+columna).readOnly=true;
+              }
+            }
+    
+            //igualdad, libertad
+     
+            var palabra1_letra1 = document.getElementById("fila1C1");
+            var palabra1_letra2 = document.getElementById("fila1C2");
+            var palabra1_letra3 = document.getElementById("fila1C3");
+            var palabra1_letra4 = document.getElementById("fila1C4");
+            var palabra1_letra5 = document.getElementById("fila1C5");
+    
+            var palabra2_letra1 = document.getElementById("fila6C2");
+            var palabra2_letra2 = document.getElementById("fila6C3");
+            var palabra2_letra3 = document.getElementById("fila6C4");
+            var palabra2_letra4 = document.getElementById("fila6C5");
+            var palabra2_letra5 = document.getElementById("fila6C6");
+            var palabra2_letra6 = document.getElementById("fila6C7");
+            var palabra2_letra7 = document.getElementById("fila6C8");
+    
+            var palabra3_letra1 = document.getElementById("fila1C4");
+            var palabra3_letra2 = document.getElementById("fila2C4");
+            var palabra3_letra3 = document.getElementById("fila3C4");
+            var palabra3_letra4 = document.getElementById("fila4C4");
+            var palabra3_letra5 = document.getElementById("fila5C4");
+            var palabra3_letra6 = document.getElementById("fila6C4");
+            var palabra3_letra7 = document.getElementById("fila7C4");
+            var palabra3_letra8 = document.getElementById("fila8C4");
+            var palabra3_letra9 = document.getElementById("fila9C4");
+    
+            var palabra4_letra1 = document.getElementById("fila1C7");
+            var palabra4_letra2 = document.getElementById("fila2C7");
+            var palabra4_letra3 = document.getElementById("fila3C7");
+            var palabra4_letra4 = document.getElementById("fila4C7");
+            var palabra4_letra5 = document.getElementById("fila5C7");
+            var palabra4_letra6 = document.getElementById("fila6C7");
+            var palabra4_letra7 = document.getElementById("fila7C7");
+
+            var palabra5_letra1 = document.getElementById("fila9C1");
+            var palabra5_letra2 = document.getElementById("fila9C2");
+            var palabra5_letra3 = document.getElementById("fila9C3");
+            var palabra5_letra4 = document.getElementById("fila9C4");
+            var palabra5_letra5 = document.getElementById("fila9C5");
+            var palabra5_letra6 = document.getElementById("fila9C6");
+            var palabra5_letra7 = document.getElementById("fila9C7");
+            var palabra5_letra8 = document.getElementById("fila9C8");
+
+            var palabra6_letra1 = document.getElementById("fila4C6");
+            var palabra6_letra2 = document.getElementById("fila4C7");
+            var palabra6_letra3 = document.getElementById("fila4C8");
+            var palabra6_letra4 = document.getElementById("fila4C9");
+            var palabra6_letra5 = document.getElementById("fila4C10");
+            var palabra6_letra6 = document.getElementById("fila4C11");
+            var palabra6_letra7 = document.getElementById("fila4C12");
+            var palabra6_letra8 = document.getElementById("fila4C13");
+
+            
+                
+            //Habilitar las casillas necesarias (horizontales)
+            palabra1_letra1.readOnly =false;
+            palabra1_letra2.readOnly =false;
+            palabra1_letra3.readOnly =false;
+            palabra1_letra4.readOnly =false;
+            palabra1_letra5.readOnly =false;
+    
+            palabra2_letra1.readOnly =false;
+            palabra2_letra2.readOnly =false;
+            palabra2_letra3.readOnly =false;
+            palabra2_letra4.readOnly =false;
+            palabra2_letra5.readOnly =false;
+            palabra2_letra6.readOnly =false;
+            palabra2_letra7.readOnly =false;
+
+            palabra5_letra1.readOnly =false;
+            palabra5_letra2.readOnly =false;
+            palabra5_letra3.readOnly =false;
+            palabra5_letra4.readOnly =false;
+            palabra5_letra5.readOnly =false;
+            palabra5_letra6.readOnly =false;
+            palabra5_letra7.readOnly =false;
+            palabra5_letra8.readOnly =false;
+
+            palabra6_letra1.readOnly =false;
+            palabra6_letra2.readOnly =false;
+            palabra6_letra3.readOnly =false;
+            palabra6_letra4.readOnly =false;
+            palabra6_letra5.readOnly =false;
+            palabra6_letra6.readOnly =false;
+            palabra6_letra7.readOnly =false;
+            palabra6_letra8.readOnly =false;    
+            
+            //Habilitar las casillas necesarias (verticales)
+            palabra3_letra1.readOnly =false;
+            palabra3_letra2.readOnly =false;
+            palabra3_letra3.readOnly =false;
+            palabra3_letra4.readOnly =false;
+            palabra3_letra5.readOnly =false;
+            palabra3_letra6.readOnly =false;
+            palabra3_letra7.readOnly =false;
+            palabra3_letra8.readOnly =false;
+            palabra3_letra9.readOnly =false;
+    
+            palabra4_letra1.readOnly =false;
+            palabra4_letra2.readOnly =false;
+            palabra4_letra3.readOnly =false;
+            palabra4_letra4.readOnly =false;
+            palabra4_letra5.readOnly =false;
+            palabra4_letra6.readOnly =false;
+            palabra4_letra7.readOnly =false;
+    
+           
+            for(fila=1; fila<=13; fila++){
+              for(columna=1;columna<=13;columna++){
+                if(document.getElementById("fila"+ fila +"C" + columna).readOnly==false){
+                   document.getElementById("fila"+ fila +"C" + columna).style.backgroundColor="#07c7e6";
+                }
+              }
+            }
+    
+            var errorActivo=0;
+            function error(){
+              document.getElementById("mensaje").innerHTML="Existen palabras malas";
+              document.getElementById("mensaje").className="alert alert-danger";
+              errorActivo=1;
+            }
+    
+            //esta funcion es para ejecutarse cada 5 segundos
+            setInterval('ocultarError()',5000);
+    
+            function ocultarError(){
+              if(errorActivo==1){
+                document.getElementById("mensaje").innerHTML="";
+                document.getElementById("mensaje").className="";
+                errorActivo=0;
+              }
+            }
+    
+            function verificar(){
+              document.getElementById("mensaje").innerHTML="";
+              palabra1 = palabra1_letra1.value + palabra1_letra2.value + palabra1_letra3.value + palabra1_letra4.value + palabra1_letra5.value; 
+              palabra2 = palabra2_letra1.value + palabra2_letra2.value + palabra2_letra3.value + palabra2_letra4.value + palabra2_letra5.value 
+              + palabra2_letra6.value + palabra2_letra7.value; 
+              palabra3 = palabra3_letra1.value + palabra3_letra2.value + palabra3_letra3.value + palabra3_letra4.value + palabra3_letra5.value 
+              + palabra3_letra6.value + palabra3_letra7.value + palabra3_letra8.value + palabra3_letra9.value; 
+              palabra4 = palabra4_letra1.value + palabra4_letra2.value + palabra4_letra3.value + palabra4_letra4.value + palabra4_letra5.value
+              + palabra4_letra6.value + palabra4_letra7.value;
+              palabra5 = palabra5_letra1.value + palabra5_letra2.value + palabra5_letra3.value + palabra5_letra4.value + palabra5_letra5.value 
+              + palabra5_letra6.value + palabra5_letra7.value + palabra5_letra8.value;
+              palabra6 = palabra6_letra1.value + palabra6_letra2.value + palabra6_letra3.value + palabra6_letra4.value + palabra6_letra5.value 
+              + palabra6_letra6.value + palabra6_letra7.value + palabra6_letra8.value;
+    
+              if(palabra1.toLowerCase()=="etica" && palabra2.toLowerCase()=="lealtad" && 
+              palabra3.toLowerCase()=="confianza" 
+              && palabra4.toLowerCase()=="equidad" && palabra5.toLowerCase()=="igualdad" && palabra6.toLowerCase()=="libertad"
+              ){
+                document.getElementById("mensaje").innerHTML="Ganaste";
+                document.getElementById("mensaje").style.fontSize="24px";
+                document.getElementById("mensaje").className="alert alert-success";
+              }else{
+                if(palabra1.toLowerCase()!="etica"){
+                   palabra1_letra1.value="";
+                   palabra1_letra2.value="";
+                   palabra1_letra3.value="";
+                   palabra1_letra4.value="";
+                   palabra1_letra5.value="";
+                   error();
+                }
+                if(palabra2.toLowerCase()!="lealtad"){
+                   palabra2_letra1.value="";
+                   palabra2_letra2.value="";
+                   palabra2_letra3.value="";
+                   palabra2_letra4.value="";
+                   palabra2_letra5.value="";
+                   palabra2_letra6.value="";
+                   palabra2_letra7.value="";
+                   error();
+                }
+    
+                if(palabra3.toLowerCase()!="confianza"){
+                   palabra3_letra1.value="";
+                   palabra3_letra2.value="";
+                   palabra3_letra3.value="";
+                   palabra3_letra4.value="";
+                   palabra3_letra5.value="";
+                   palabra3_letra6.value="";
+                   palabra3_letra7.value="";
+                   palabra3_letra8.value="";
+                   palabra3_letra9.value="";
+                   error();
+                }
+    
+                if(palabra4.toLowerCase()!="equidad"){
+                   palabra4_letra1.value="";
+                   palabra4_letra2.value="";
+                   palabra4_letra3.value="";
+                   palabra4_letra4.value="";
+                   palabra4_letra5.value="";
+                   palabra4_letra6.value="";
+                   palabra4_letra7.value="";
+                   error();
+                }
+
+                if(palabra5.toLowerCase()!="igualdad"){
+                   palabra5_letra1.value="";
+                   palabra5_letra2.value="";
+                   palabra5_letra3.value="";
+                   palabra5_letra4.value="";
+                   palabra5_letra5.value="";
+                   palabra5_letra6.value="";
+                   palabra5_letra7.value="";
+                   palabra5_letra8.value="";
+                   error();
+                }
+
+                if(palabra6.toLowerCase()!="libertad"){
+                   palabra6_letra1.value="";
+                   palabra6_letra2.value="";
+                   palabra6_letra3.value="";
+                   palabra6_letra4.value="";
+                   palabra6_letra5.value="";
+                   palabra6_letra6.value="";
+                   palabra6_letra7.value="";
+                   palabra6_letra8.value="";
+                   error();
+                }
+
+                
+    
+                //corrector de palabras
+                if(palabra1.toLowerCase()=="etica"){
+                   palabra1_letra4.value="c";
+                }
+    
+                if(palabra2.toLowerCase()=="lealtad"){
+                   palabra2_letra1.value="l";
+                }
+    
+                if(palabra3.toLowerCase()=="confianza"){
+                   palabra3_letra1.value="c";
+                  //  palabra3_letra4.value="a";
+                }
+    
+                if(palabra4.toLowerCase()=="equidad"){
+                   palabra4_letra1.value="e";
+                }
+
+                if(palabra5.toLowerCase()=="igualdad"){
+                   palabra5_letra1.value="i";
+                }
+                if(palabra6.toLowerCase()=="libertad"){
+                   palabra6_letra1.value="l";
+                }
+    
+              }
+            }
+    
+          </script>
+    
+          <img src="img/boton.png" onClick="verificar()" style="margin: 0 0 0 13%;"/>
+        </div>
+    
+ 
+        </div>
+    <div class="snackbars" id="form-output-global"></div>
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
