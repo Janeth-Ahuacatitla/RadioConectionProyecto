@@ -8,6 +8,14 @@ button:focus {
 	outline: none !important;
 }
 
+.copyrights {
+    background-color: #800020; /* Color vino institucional */
+    color: #ffffff;
+    padding: 30px 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+  }
+
 button::-moz-focus-inner {
 	border: 0;
 }
